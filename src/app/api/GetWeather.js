@@ -4,8 +4,8 @@ import brisbane from "assets/brisbane.jpeg";
 import hobart from "assets/hobart.jpeg";
 import london from "assets/london.jpeg";
 
-const openWeatherApiKey = "ed9e830cd51367c6b723e424ffae8a7d";
-const openWeatherBaseUrl = "https://api.openweathermap.org/data/2.5/onecall";
+const openWeatherApiKey = process.env.REACT_APP_API_KEY;
+const openWeatherBaseUrl = process.env.REACT_APP_API_URL;
 
 const myCities = {
   brisbane: {
